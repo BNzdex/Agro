@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Análise de Solo e Calagem</title>
+  <link rel="stylesheet" href="css/analise_solo.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>AgroSystem</h2>
+      <nav>
+        <a href="dashboard.html">Início</a>
+        <a href="#" class="active">Análise de solo e calagem</a>
+        <a href="folha_cafe.html">Folha Café Conilon</a>
+        <a href="folha_pimenta.html">Folha Pimenta</a>
+        <a href="#">Adubação Manual</a>
+        <a href="#">Cadastro de informações</a>
+        <a href="index.html">Sair</a>
+      </nav>
+    </div>
+
+    <div class="main">
+      <h1>Interpretação de Análise de Solo e Calagem</h1>
+
+      <!-- CAMPO TEXTURA DO SOLO -->
+      <div class="textura-solo">
+        <label for="textura">Textura do Solo:</label>
+        <input type="text" id="textura" name="textura" placeholder="Digite a textura do solo..." />
+      </div>
+      <div class="form-group">
+          <button class="btn-clear">Limpar Informações</button>
+        </div>
+
+      <!-- TABELA PRINCIPAL -->
+      <table>
+        <thead>
+          <tr>
+            <th>Elemento Analisado</th>
+            <th>Unidade</th>
+            <th>Resultado</th>
+            <th>Classificação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fósforo Mehlich</td>
+            <td>mg/dm3</td>
+            <td><input type="number" id="fosforo" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Fósforo Remanescente</td>
+            <td>Dag/kg</td>
+            <td><input type="number" id="fosforo" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Fósforo resina</td>
+            <td>mg/dm3</td>
+            <td><input type="number" id="fosforo" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Potássio</td>
+            <td>cmol c/dm3</td>
+            <td><input type="number" id="potassio" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Enxofre</td>
+            <td>mg/dm3</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Cálcio</td>
+            <td>cmol c/dm3</td>
+            <td><input type="number" id="calcio" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Magnésio</td>
+            <td>cmol c/dm3</td>
+            <td><input type="number" id="magnesio" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Alumínio</td>
+            <td>cmol c/dm3</td>
+            <td><input type="number" id="aluminio" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>H+A1</td>
+            <td>cmol c/dm3</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>pH em H2O</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>pH em CaC12</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>pH em SMP</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Matéria Orgânica</td>
+            <td>Dag/kg</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Ferro</td>
+            <td>mg/dm3</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Zinco</td>
+            <td>mg/dm³</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Cobre</td>
+            <td>mg/dm³</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Manganês</td>
+            <td>mg/dm³</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Boro</td>
+            <td>mg/dm³</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Sódio</td>
+            <td>mg/dm³</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Cloro</td>
+            <td>mg/dm³</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação Ca/Mg</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação Ca/K</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação Mg/K</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Sat. Ca na CTC(T)</td>
+            <td>%</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Sat. Mg na CTC(T)</td>
+            <td>%</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Sat. K na CTC(T)</td>
+            <td>%</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>índice sat. Na</td>
+            <td>%</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Soma de bases</td>
+            <td>cmol c/dm3</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>CTC efetiva(t)</td>
+            <td>cmol c/dm3</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>CTC a pH 7.0(T)</td>
+            <td>cmol c/dm3</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Sat. A1</td>
+            <td>%</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Sat. De bases</td>
+            <td>%</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h2>Recomendação de Calagem</h2>
+      <table>
+        <tr>
+          <th>Tipo De Aplicação A Ser Realizada</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>Saturação por Bases Esperada (V%)</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>PRNT do Calcário Utilizado (%)</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>Necessidade de Calagem</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>Quantidade de Calcário Necessário</th>
+          <td><input type="text" /></td>
+        </tr>
+      </table>
+      <h2 style="margin-top: 2rem;">Visualização Gráfica</h2>
+      <canvas id="graficoSolo" style="max-width: 700px; margin-top: 1rem;"></canvas>
+    </div>
+  </div>
+  <script>
+  const ctx = document.getElementById('graficoSolo').getContext('2d');
+
+  const radarData = {
+    labels: ['Fósforo', 'Potássio', 'Cálcio', 'Magnésio', 'Alumínio'],
+    datasets: [{
+      label: 'Análise do Solo',
+      data: [0, 0, 0, 0, 0], // valores iniciais
+      backgroundColor: 'rgba(76, 175, 80, 0.2)',
+      borderColor: 'rgba(76, 175, 80, 1)',
+      pointBackgroundColor: 'rgba(76, 175, 80, 1)',
+      pointBorderColor: '#fff',
+      borderWidth: 2
+    }]
+  };
+
+  const radarChart = new Chart(ctx, {
+    type: 'radar',
+    data: radarData,
+    options: {
+      responsive: true,
+      scales: {
+        r: {
+          angleLines: { display: true },
+          suggestedMin: 0,
+          suggestedMax: 60,
+          pointLabels: { font: { size: 14 } }
+        }
+      },
+      plugins: {
+        legend: { position: 'top' }
+      }
+    }
+  });
+
+  // Atualiza o gráfico sempre que algum input mudar
+  const camposSolo = ['fosforo', 'potassio', 'calcio', 'magnesio', 'aluminio'];
+
+  camposSolo.forEach((campo, index) => {
+    document.getElementById(campo).addEventListener('input', () => {
+      const novoValor = parseFloat(document.getElementById(campo).value) || 0;
+      radarChart.data.datasets[0].data[index] = novoValor;
+      radarChart.update();
+    });
+  });
+</script>
+</body>
+</html>

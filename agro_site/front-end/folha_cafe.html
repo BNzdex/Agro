@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Análise Foliar - Café Conilon</title>
+  <link rel="stylesheet" href="css/folha_cafe.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>AgroSystem</h2>
+      <nav>
+        <a href="dashboard.html">Início</a>
+        <a href="analise_solo.html">Análise de solo e calagem</a>
+        <a href="#" class="active">Folha Café Conilon</a>
+        <a href="folha_pimenta.html">Folha Pimenta</a>
+        <a href="#">Adubação Manual</a>
+        <a href="#">Cadastro de informações</a>
+        <a href="index.html">Sair</a>
+      </nav>
+    </div>
+
+    <div class="main">
+      <h1>Análise Foliar - Café Conilon</h1>
+
+      <div class="form-section">
+        <button class="btn-clear">Limpar Informações</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nutriente</th>
+            <th>Unidade</th>
+            <th>Resultado</th>
+            <th>Classificação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nitrogênio (N) 1/</td>
+            <td>g/Kg</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Fósforo (P) 2/</td>
+            <td>g/Kg</td>
+            <td><input type="number" id="fosforo" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Potássio (K) 2/</td>
+            <td>g/Kg</td>
+            <td><input type="number" id="potassio" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Cálcio (Ca) 2/</td>
+            <td>g/Kg</td>
+            <td><input type="number" id="calcio" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Magnésio (Mg) 2/</td>
+            <td>g/Kg</td>
+            <td><input type="number" id="magnesio" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Enxofre (S) 2/</td>
+            <td>g/Kg</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Zinco (Zn)</td>
+            <td>mg/kg</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Ferro (Fe) 2/</td>
+            <td>mg/kg</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Manganês (Mn) 2/</td>
+            <td>mg/kg</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Cobre (Cu) 2/</td>
+            <td>mg/kg</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Boro (B) 3/</td>
+            <td>mg/kg</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Sódio (Na) 2/</td>
+            <td>mg/kg</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Cloro (C1) 4/</td>
+            <td>mg/kg</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Alumininio</td>
+            <td>mg/kg</td>
+            <td><input type="number" id="aluminio" value="" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação N/P</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação N/K</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação N/S</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação N/Mg</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação N/Cu</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação N/B</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação P/Mg</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação P/Zn</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação P/Cu</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação K/Ca</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação K/Mg</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação K/Mn</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação Ca/Mg</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação Ca/Mn</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Relação Fe/Mn</td>
+            <td>-</td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 style="margin-top: 2rem;">Visualização Gráfica</h2>
+      <canvas id="graficoSolo" style="max-width: 700px; margin-top: 1rem;"></canvas>
+    </div>
+  </div>
+  <script>
+  const ctx = document.getElementById('graficoSolo').getContext('2d');
+
+  const radarData = {
+    labels: ['Fósforo', 'Potássio', 'Cálcio', 'Magnésio', 'Alumínio'],
+    datasets: [{
+      label: 'Análise do Solo',
+      data: [0, 0, 0, 0, 0], // valores iniciais
+      backgroundColor: 'rgba(76, 175, 80, 0.2)',
+      borderColor: 'rgba(76, 175, 80, 1)',
+      pointBackgroundColor: 'rgba(76, 175, 80, 1)',
+      pointBorderColor: '#fff',
+      borderWidth: 2
+    }]
+  };
+
+  const radarChart = new Chart(ctx, {
+    type: 'radar',
+    data: radarData,
+    options: {
+      responsive: true,
+      scales: {
+        r: {
+          angleLines: { display: true },
+          suggestedMin: 0,
+          suggestedMax: 60,
+          pointLabels: { font: { size: 14 } }
+        }
+      },
+      plugins: {
+        legend: { position: 'top' }
+      }
+    }
+  });
+
+  // Atualiza o gráfico sempre que algum input mudar
+  const camposSolo = ['fosforo', 'potassio', 'calcio', 'magnesio', 'aluminio'];
+
+  camposSolo.forEach((campo, index) => {
+    document.getElementById(campo).addEventListener('input', () => {
+      const novoValor = parseFloat(document.getElementById(campo).value) || 0;
+      radarChart.data.datasets[0].data[index] = novoValor;
+      radarChart.update();
+    });
+  });
+  </script>
+</body>
+</html>
