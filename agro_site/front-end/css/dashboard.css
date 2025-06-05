@@ -65,10 +65,13 @@ header p {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* aumentou o tamanho mínimo */
+  gap: 2rem; /* espaço mais amplo entre os cards */
+  justify-items: center; /* centraliza os cards dentro das colunas */
   margin-top: 40px;
+  padding: 0 1rem; /* espaço nas laterais em telas menores */
 }
+
 
 .card {
   background-color: white;
@@ -90,3 +93,4 @@ header p {
 .card p {
   color: #555;
 }
+
