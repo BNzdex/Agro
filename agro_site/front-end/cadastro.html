@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Fontes</title>
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>AgroSystem</h2>
+      <nav>
+        <a href="dashboard.html">Início</a>
+        <a href="analise_solo.html">Análise de solo e calagem</a>
+        <a href="folha_cafe.html">Café Conilon</a>
+        <a href="folha_pimenta.html">Pimenta</a>
+        <a href="adubacao.html">Adubação Manual</a>
+        <a href="#" class="active">Cadastro de informações</a>
+        <a href="index.html">Sair</a>
+      </nav>
+    </div>
+
+    <main class="main">
+      <h1>Cadastro de Fontes de Nutrientes</h1>
+
+      <div class="dados-iniciais">
+        <label for="caminho">Caminho para a pasta criada para os relatórios:</label>
+        <input type="text" id="caminho" name="caminho">
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4">Fonte de Nitrogênio</th>
+            <th colspan="4">Fonte de Potássio</th>
+            <th colspan="4">Fonte de Fósforo</th>
+            <th colspan="4">Fonte de Ca</th>
+            <th colspan="4">Fonte de Mg</th>
+          </tr>
+          <tr>
+            <th>Fonte</th><th>Teor de N</th><th>Preço</th><th>Unidade (g)</th>
+            <th>Fonte</th><th>Teor de K₂O</th><th>Preço</th><th>Unidade (g)</th>
+            <th>Fonte</th><th>Teor de P₂O₅</th><th>Preço</th><th>Unidade (g)</th>
+            <th>Fonte</th><th>Teor de CaO</th><th>Preço</th><th>Unidade (g)</th>
+            <th>Fonte</th><th>Teor de MgO</th><th>Preço</th><th>Unidade (g)</th>
+          </tr>
+        </thead>
+         <tbody>
+          <tr>
+            <td><input type="text" value="Uréia"></td><td><input type="text" value="45 %"></td><td><input type="text" value="R$ 320,00"></td><td><input type="text" value="50.000"></td>
+            <td><input type="text" value="KCl"></td><td><input type="text" value="60 %"></td><td><input type="text" value="R$ 150,00"></td><td><input type="text" value="25.000"></td>
+            <td><input type="text" value="MAP"></td><td><input type="text" value="48 %"></td><td><input type="text" value="R$ 200,00"></td><td><input type="text" value="50.000"></td>
+            <td><input type="text" value="Nitrato de Ca"></td><td><input type="text" value="18 %"></td><td><input type="text" value="R$ 150,00"></td><td><input type="text" value="25.000"></td>
+            <td><input type="text" value="Sulfato de Mg"></td><td><input type="text" value="9 %"></td><td><input type="text" value="R$ 80,00"></td><td><input type="text" value="25.000"></td>
+          </tr>
+          <thead>
+            <tr>
+            <td><input type="text" value="20-02-20"></td><td><input type="text" value="20 %"></td><td><input type="text" value="R$ 210,00"></td><td><input type="text" value="25.000"></td>
+            <td colspan="16"></td>
+          </tr>
+          <tr>
+            <td><input type="text" value="19-04-19"></td><td><input type="text" value="19 %"></td><td><input type="text" value="R$ 245,00"></td><td><input type="text" value="50.000"></td>
+            <td colspan="16"></td>
+          </tr>
+          <tr>
+            <td><input type="text" value="16-16-16"></td><td><input type="text" value="16 %"></td><td><input type="text" value="R$ 250,00"></td><td><input type="text" value="50.000"></td>
+            <td colspan="16"></td>
+          </tr>
+          <tr>
+            <td><input type="text" value="24-10-10"></td><td><input type="text" value="24 %"></td><td><input type="text" value="R$ 200,00"></td><td><input type="text" value="25.000"></td>
+            <td colspan="16"></td>
+          </tr>
+          </thead>
+
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

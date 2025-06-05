@@ -12,37 +12,29 @@ body {
 }
 
 .sidebar {
-  width: 220px;
-  background-color: #2e7d32;
+  width: 250px;
+  background: linear-gradient(to bottom, #207f46, #1a6639);
+  padding: 2rem 1rem;
   color: white;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-.sidebar nav {
-  display: flex;
-  flex-direction: column;
-  gap: 12px; /* espaçamento entre os links */
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .sidebar nav a {
+  display: block;
   color: white;
   text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
   transition: background 0.3s;
-  background-color: transparent;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: #145e2b;
 }
 
 

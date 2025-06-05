@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Relatório de Análise</title>
+    <link rel="stylesheet" href="css/pagina_pdf.css" />
+</head>
+<body>
+    <div class="layout">
+    <div class="sidebar">
+      <h2>AgroSystem</h2>
+      <nav>
+        <a href="dashboard.html">Início</a>
+        <a href="analise_solo.html">Análise de solo e calagem</a>
+        <a href="folha_cafe.html">Café Conilon</a>
+        <a href="folha_pimenta.html">Pimenta</a>
+        <a href="adubacao.html">Adubação Manual</a>
+        <a href="cadastro.html">Cadastro de informações</a>
+        <a href="index.html">Sair</a>
+      </nav>
+    </div>
+    <div class="container">
+        <div class="cabecalho">
+            <div class="logo">COLOQUE SUA LOGO AQUI</div>
+            <div class="painel-pdf">
+                <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="PDF" class="icone" />
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828665.png" alt="Fechar" class="icone" />
+                <div class="painel-campos">
+                    <button>Gerar PDF</button>
+                    <label>Destino PDF:</label>
+                    <input type="text" />
+                    <label>Nº PDF:</label>
+                    <input type="text" />
+                </div>
+            </div>
+        </div>
+
+        <div class="campos-info">
+            <div><strong>Proprietário:</strong> <input type="text" /></div>
+            <div><strong>Data da análise:</strong> <input type="date" /></div>
+            <div><strong>Propriedade:</strong> <input type="text" /></div>
+            <div><strong>Estande:</strong> <input type="text" /></div>
+            <div><strong>Cultura:</strong> <input type="text" /></div>
+            <div><strong>Área:</strong> <input type="text" /></div>
+            <div><strong>Gleba:</strong> <input type="text" /></div>
+            <div><strong>Responsável Técnico:</strong> <input type="text" /></div>
+        </div>
+
+        <h3>A - Interpretação da Análise do Solo</h3>
+        <div class="quadro-interpretacao">
+            <!-- Aqui você pode inserir o gráfico existente -->
+            <p>[INTERPRETAÇÃO/GRÁFICO AQUI]</p>
+        </div>
+
+        <h3>B - Recomendação de Calagem</h3>
+        <textarea rows="4"></textarea>
+
+        <h3>C - Recomendação de Adubação</h3>
+        <p class="subtitulo">Recomendação nutricional anual em gramas por planta.</p>
+        <table>
+            <tr>
+                <th>Ago</th><th>Set</th><th>Out</th><th>Nov</th><th>Dez</th>
+                <th>Jan</th><th>Fev</th><th>Mar</th><th>Abr</th><th>Mai</th>
+                <th>Jun</th><th>Jul</th>
+            </tr>
+            <tr>
+                <td><input type="number" /></td><td><input type="number" /></td><td><input type="number" /></td>
+                <td><input type="number" /></td><td><input type="number" /></td><td><input type="number" /></td>
+                <td><input type="number" /></td><td><input type="number" /></td><td><input type="number" /></td>
+                <td><input type="number" /></td><td><input type="number" /></td><td><input type="number" /></td>
+            </tr>
+        </table>
+
+        <h3>D - Custo Anual com Adubação</h3>
+        <table>
+            <tr>
+                <th>Ago</th><th>Set</th><th>Out</th><th>Nov</th><th>Dez</th>
+                <th>Jan</th><th>Fev</th><th>Mar</th><th>Abr</th><th>Mai</th>
+                <th>Jun</th><th>Jul</th>
+            </tr>
+            <tr>
+                <td><input type="number" /></td><td><input type="number" /></td><td><input type="number" /></td>
+                <td><input type="number" /></td><td><input type="number" /></td><td><input type="number" /></td>
+                <td><input type="number" /></td><td><input type="number" /></td><td><input type="number" /></td>
+                <td><input type="number" /></td><td><input type="number" /></td><td><input type="number" /></td>
+            </tr>
+        </table>
+        <p class="orcamento-final">Orçamento Final: <input type="text" /></p>
+
+        <h3>E - Observações</h3>
+        <textarea rows="6"></textarea>
+    </div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Fixar a sidebar à esquerda */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(to bottom, #207f46, #1a6639);
+  padding: 2rem 1rem;
+  color: white;
+  flex-shrink: 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: #145e2b;
+}
+
+/* Ajuste no container para ocupar o espaço restante */
+.container {
+  flex: 1;
+  margin: 0;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+h3 {
+  color: #2e7d32;
+  margin-top: 30px;
+  border-bottom: 1px solid #c8e6c9;
+  padding-bottom: 6px;
+}
+
+.subtitulo {
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Cabeçalho com logo e painel PDF */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #207f46;
+  background-color: #e0f2f1;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.painel-pdf {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.painel-pdf .icone {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.painel-campos {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.painel-campos label {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.painel-campos input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Campos de dados iniciais */
+.campos-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.campos-info input[type="text"],
+.campos-info input[type="date"] {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+table th,
+table td {
+  border: 1px solid #999;
+  text-align: center;
+  padding: 6px;
+  background-color: #fafafa;
+}
+
+table th {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+table input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* Textareas */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+/* Orçamento final */
+.orcamento-final {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.orcamento-final input {
+  margin-left: 10px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Quadro de gráfico/interpretação */
+.quadro-interpretacao {
+  border: 1px solid #ccc;
+  padding: 20px;
+  min-height: 200px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+/* Botão Gerar PDF (se desejar usar estilo extra) */
+.painel-campos button {
+  background-color: #207f46;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.painel-campos button:hover {
+  background-color: #145e2b;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recomendação Nutricional</title>
+  <link rel="stylesheet" href="css/adubacao.css">
+</head>
+<body>
+  <div class="container">
+     <div class="sidebar">
+      <h2>AgroSystem</h2>
+      <nav>
+        <a href="dashboard.html">Início</a>
+        <a href="analise_solo.html">Análise de solo e calagem</a>
+        <a href="folha_cafe.html">Café Conilon</a>
+        <a href="folha_pimenta.html">Pimenta</a>
+        <a href="#" class="active">Adubação Manual</a>
+        <a href="cadastro.html">Cadastro de informações</a>
+        <a href="index.html">Sair</a>
+      </nav>
+    </div>
+
+    <main class="main">
+      <h1>Adubação com base na Produtividade Esperada</h1>
+
+      <form class="dados-iniciais">
+        <div class="colunas">
+          <div class="coluna-esq">
+            <label>Proprietário:</label>
+            <input type="text">
+            <label>Propriedade:</label>
+            <input type="text">
+            <label>Área:</label>
+            <input type="text">
+            <label>Nº de plantas:</label>
+            <input type="text">
+            <div class="espacamento">
+              <label>Espaçamento entre linhas</label>
+              <input type="text"> 
+              <label>Espaçamento entre plantas</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="coluna-dir">
+            <label>Data:</label>
+            <input type="date">
+            <label>Município:</label>
+            <input type="text">
+            <label>Produção esperada:</label>
+            <input type="text">
+            <label>Responsável Técnico:</label>
+            <input type="text">
+            <label>Gleba:</label>
+            <input type="text">
+             <a href="pagina_pdf.html" class="botao-relatorio">Visualizar Relatório Completo</a>
+
+          </div>
+        </div>
+      </form>
+
+      <h3>Recomendação Nutricional Anual em gramas por planta.</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Fontes</th>
+            <th>Fertilizante</th>
+            <th>Jan</th><th>Fev</th><th>Mar</th><th>Abr</th><th>Mai</th><th>Jun</th><th>Jul</th>
+            <th>Ago</th><th>Set</th><th>Out</th><th>Nov</th><th>Dez</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" value="Fonte de N"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><input type="text" value="Fonte de K"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><input type="text" value="Fonte de P"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><input type="text" value="Fonte de Ca"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><input type="text" value="Fonte de Mg"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+            <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>
